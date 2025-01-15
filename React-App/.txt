@@ -1,0 +1,20 @@
+{/* recentprompt */}
+         <div className='recent-propmt'>
+          <div className='flex items-start gap-4'>
+          <img className='w-[40px] bg-cover h-10 rounded-full'  src={assets.user_icon} alt="" />
+          <p className='text-white leading-loose font-[400]'>{recentPrompt}</p>
+          </div>
+          </div>
+        {/* ai response */}
+        {
+          loading ? <>
+         <Loading/>
+          </> : <>
+          <div className='ai response '>
+          <div className='flex  items-start  gap-5'>
+          <img className='w-[40px] bg-container  rounded-full'  src={assets.meditechlogo} alt="" />
+          <p  dangerouslySetInnerHTML={{__html:result}} className='text-white leading-loose font-[400]'></p>
+          </div>
+          </div>
+          </>
+        }

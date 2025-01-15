@@ -1,0 +1,21 @@
+.result-container {
+    /* Existing styles */
+    overflow-y: scroll; /* Ensure scrolling is enabled */
+    
+    /* Hide scrollbar for WebKit browsers (e.g., Chrome, Safari) */
+    -webkit-overflow-scrolling: touch;
+    -webkit-scrollbar: none;
+  
+    /* Hide scrollbar for other browsers */
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  /* Remove scrollbar track and thumb for WebKit browsers */
+  .result-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+
+
+
+  
